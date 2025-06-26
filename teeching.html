@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>교사를 위한 OECD 티칭 컴퍼스 | 교사 재교육 프로그램</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        /* 아코디언 패널 트랜지션 효과 */
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white/80 backdrop-blur-md shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-bold text-blue-600">
+                        <i class="fas fa-compass mr-2"></i>Teaching Compass
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#vision" class="text-gray-600 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">비전</a>
+                        <a href="#anchor" class="text-gray-600 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">앵커</a>
+                        <a href="#agency" class="text-gray-600 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">주도성</a>
+                        <a href="#competencies" class="text-gray-600 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">역량</a>
+                        <a href="#wellbeing" class="text-gray-600 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">웰빙</a>
+                        <a href="#ecosystem" class="text-gray-600 hover:bg-gray-200 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">생태계</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative bg-cover bg-center h-[60vh]" style="background-image: url('https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2070&auto=format&fit=crop');">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center items-center text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight">OECD 티칭 컴퍼스</h1>
+            <p class="mt-4 text-xl md:text-2xl text-gray-200 max-w-3xl">교육과정 변화의 주체로서 교사를 다시 상상하다</p>
+            <a href="#vision" class="mt-8 px-8 py-3 bg-blue-600 text-white font-bold rounded-full hover:bg-blue-700 transform hover:scale-105 transition-all">
+                학습 시작하기 <i class="fas fa-arrow-down ml-2"></i>
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto py-12 px-4">
+        
+        <!-- Section 1: The Vision -->
+        <section id="vision" class="py-16">
+            <h2 class="text-3xl font-bold text-center mb-4"><i class="fas fa-bullseye mr-3 text-blue-500"></i>1. 비전: 우리가 원하는 미래 만들기</h2>
+            <p class="text-center text-lg text-gray-600 mb-12">티칭 컴퍼스는 학생과 교사 모두를 위한 공유된 비전과 목적을 명확히 하고, 교육을 미래에 대한 집단적 열망과 일치시키는 것을 목표로 합니다.</p>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h3 class="text-xl font-bold mb-4 text-gray-800">핵심 목표: 개인, 공동체, 환경의 웰빙</h3>
+                <p class="mb-6">OECD 러닝 컴퍼스는 지속 가능한 발전을 위해 개인, 공동체, 환경의 웰빙을 포괄하는 총체적 교육 접근법을 제시합니다. 티칭 컴퍼스는 이 목표를 중심으로 합니다.</p>
+                <ul class="space-y-4">
+                    <li class="flex items-start"><i class="fas fa-user-check text-green-500 mr-3 mt-1"></i><div><strong class="font-semibold">개인 웰빙:</strong> 개인의 성장, 회복탄력성, 급변하는 세상에 필요한 역량을 강조합니다.</div></li>
+                    <li class="flex items-start"><i class="fas fa-users-line text-green-500 mr-3 mt-1"></i><div><strong class="font-semibold">공동체 웰빙:</strong> 사회적 결속, 포용, 공동의 목표를 위한 협력의 중요성을 강조합니다.</div></li>
+                    <li class="flex items-start"><i class="fas fa-leaf text-green-500 mr-3 mt-1"></i><div><strong class="font-semibold">환경 웰빙:</strong> 다음 세대를 위한 지속가능성, 환경 보호, 책임감 있는 자원 관리를 강조합니다.</div></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 2: The Anchor -->
+        <section id="anchor" class="py-16">
+            <h2 class="text-3xl font-bold text-center mb-4"><i class="fas fa-anchor mr-3 text-blue-500"></i>2. 앵커: 강한 정체성으로 변화 탐색하기</h2>
+            <p class="text-center text-lg text-gray-600 mb-12">교사들이 변화의 흐름 속에서 길을 잃지 않도록, 강력한 직업적 정체성과 명확한 윤리적 가치에 기반한 '내면의 앵커'를 제공합니다.</p>
+            
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-4xl text-blue-500 mb-3"><i class="fas fa-street-view"></i></div>
+                    <h3 class="text-lg font-bold mb-2">존재 (Being)</h3>
+                    <p class="text-sm text-gray-600">진정성 있는 자기 인식과 직업적 정체성을 바탕으로 합니다.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-4xl text-blue-500 mb-3"><i class="fas fa-people-arrows"></i></div>
+                    <h3 class="text-lg font-bold mb-2">소속 (Belonging)</h3>
+                    <p class="text-sm text-gray-600">상호 지지적인 관계와 공동체 안에서 소속감을 느낍니다.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-4xl text-blue-500 mb-3"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="text-lg font-bold mb-2">성장 (Becoming)</h3>
+                    <p class="text-sm text-gray-600">지속적인 학습과 성찰을 통해 끊임없이 발전합니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Teacher Agency -->
+        <section id="agency" class="py-16">
+            <h2 class="text-3xl font-bold text-center mb-4"><i class="fas fa-rocket mr-3 text-blue-500"></i>3. 교사 주도성: 교육과정 변화를 이끌다</h2>
+            <p class="text-center text-lg text-gray-600 mb-12">교사들이 의미 있는 혁신을 시작하고 유지하는 데 필요한 자율성, 자신감, 역량을 갖추도록 지원합니다.</p>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <img src="https://i.ibb.co/6P2fBst/teacher-agency.png" alt="교사 주도성 모델" class="mx-auto mb-6 rounded-lg shadow-sm">
+                <p class="mb-4">교사 주도성은 단순히 자율성을 넘어, 목적 있는 행동과 결정을 통해 교육 현장에 긍정적인 영향을 미치려는 의지를 포함합니다. 이는 세 가지 차원으로 나타납니다.</p>
+                <ul class="space-y-3">
+                    <li><i class="fa-solid fa-user text-purple-500 mr-2"></i><strong>개인 주도성 (Individual Agency):</strong> 자신의 신념과 전문성을 바탕으로 변화를 주도하는 능력.</li>
+                    <li><i class="fa-solid fa-handshake-angle text-purple-500 mr-2"></i><strong>협력 주도성 (Co-Agency):</strong> 동료, 학생, 학부모, AI 등 다른 주체와 상호작용하며 함께 성장하는 능력.</li>
+                    <li><i class="fa-solid fa-users text-purple-500 mr-2"></i><strong>집단 주도성 (Collective Agency):</strong> 공동의 목표를 위해 협력하여 교육 시스템에 영향을 미치는 능력.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 4: Teacher Competencies -->
+        <section id="competencies" class="py-16">
+            <h2 class="text-3xl font-bold text-center mb-4"><i class="fas fa-cogs mr-3 text-blue-500"></i>4. 교사 역량: 복잡성 헤쳐나가기</h2>
+            <p class="text-center text-lg text-gray-600 mb-12">교사들이 복잡성, 불확실성, 지속적인 변화를 효과적으로 관리할 수 있는 핵심 역량과 적응 기술을 함양하도록 합니다.</p>
+            
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                 <div class="mb-8">
+                    <button class="accordion-toggle w-full text-left bg-blue-50 hover:bg-blue-100 p-4 rounded-lg font-bold text-lg flex justify-between items-center transition-colors">
+                        <span><i class="fa-solid fa-book-open-reader mr-2"></i> 사례 연구: 싱가포르의 교사 교육 프레임워크</span>
+                        <i class="fas fa-chevron-down transform transition-transform"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="border-l-4 border-blue-200 p-4 mt-2 bg-gray-50">
+                            <p class="mb-4">싱가포르 국립교육원(NIE)의 모델은 가치, 지식, 기술의 통합을 통해 교육 전문가의 총체적 발달을 추구합니다. 이 모델은 교사들이 윤리적이고 혁신적이며 평생 학습에 헌신하도록 지원합니다.</p>
+                            <img src="https://i.ibb.co/K2s9JkM/singapore-model.png" alt="싱가포르 교사 교육 모델" class="w-full h-auto rounded-lg shadow-md">
+                            <ul class="mt-4 list-disc list-inside text-gray-700">
+                                <li><strong>핵심 가치(Values):</strong> 학습자 중심, 교사 정체성, 공동체에 대한 봉사</li>
+                                <li><strong>지식(Knowledge):</strong> 학습자, 교육학, 교육과정, 글로벌 인식 등</li>
+                                <li><strong>기술(Skills):</strong> 성찰, 소통, 기술 활용, 사회·정서적 지능 등</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="font-bold text-lg mb-2"><i class="fa-solid fa-brain mr-2 text-orange-500"></i>지식 (Knowledge)</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1">
+                            <li>학습자에 대한 이해</li>
+                            <li>자기 자신에 대한 이해 (Self-knowledge)</li>
+                            <li>세상에 대한 지식 (기후변화, 디지털화 등)</li>
+                            <li>교육 데이터 및 연구, AI에 대한 지식</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2"><i class="fa-solid fa-tools mr-2 text-orange-500"></i>기술 (Skills)</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1">
+                            <li>비판적 사고 및 문제 해결</li>
+                            <li>창의성 및 호기심</li>
+                            <li>공감 및 협업 능력</li>
+                            <li>디지털 및 기술 활용 능력</li>
+                        </ul>
+                    </div>
+                    <div class="md:col-span-2">
+                        <h3 class="font-bold text-lg mb-2 mt-4"><i class="fa-solid fa-heart-circle-check mr-2 text-orange-500"></i>태도와 가치 (Attitudes & Values)</h3>
+                        <p class="text-gray-700">성장 마인드셋, 회복탄력성, 포용성, 협력적 마인드, 존엄성, 정의, 연대, 환경 인식 등 교육의 윤리적 토대를 형성하는 내면의 신념입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Teacher Well-being -->
+        <section id="wellbeing" class="py-16">
+            <h2 class="text-3xl font-bold text-center mb-4"><i class="fas fa-spa mr-3 text-blue-500"></i>5. 교사 웰빙: 번영하는 전문가를 위하여</h2>
+            <p class="text-center text-lg text-gray-600 mb-12">교사들이 개인적으로나 직업적으로 번창하여 학생들을 교육하고 영감을 줄 수 있는 지속 가능한 역량을 유지하도록 포괄적인 웰빙 전략을 촉진합니다.</p>
+
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <p class="text-center mb-8">교사의 웰빙은 단순히 규제를 넘어, 목적의식을 바탕으로 한 총체적인 관점에서 접근해야 합니다.</p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-24 h-24 rounded-full bg-green-100 flex items-center justify-center mb-3">
+                            <i class="fas fa-heart-pulse text-4xl text-green-600"></i>
+                        </div>
+                        <h4 class="font-bold text-lg">신체적 웰빙</h4>
+                        <p class="text-sm text-gray-600">공정한 근무 조건, 일과 삶의 균형, 안전한 교육 환경</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-24 h-24 rounded-full bg-yellow-100 flex items-center justify-center mb-3">
+                            <i class="fas fa-lightbulb text-4xl text-yellow-600"></i>
+                        </div>
+                        <h4 class="font-bold text-lg">인지적 웰빙</h4>
+                        <p class="text-sm text-gray-600">지적 참여, 주인의식, 지속적인 전문적 성장</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-24 h-24 rounded-full bg-sky-100 flex items-center justify-center mb-3">
+                            <i class="fas fa-people-group text-4xl text-sky-600"></i>
+                        </div>
+                        <h4 class="font-bold text-lg">사회·정서적 웰빙</h4>
+                        <p class="text-sm text-gray-600">자기 가치감, 회복탄력성, 공감, 신뢰, 협력</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Learning Ecosystem -->
+        <section id="ecosystem" class="py-16">
+            <h2 class="text-3xl font-bold text-center mb-4"><i class="fas fa-sitemap mr-3 text-blue-500"></i>6. 학습 생태계의 일부로서의 교사</h2>
+            <p class="text-center text-lg text-gray-600 mb-12">교사들을 집단적 책임, 상호 학습, 시스템적 교육 개선을 촉진하는 협력 네트워크 및 파트너십의 중심에 위치시킵니다.</p>
+
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                 <div class="mb-8">
+                    <button class="accordion-toggle w-full text-left bg-blue-50 hover:bg-blue-100 p-4 rounded-lg font-bold text-lg flex justify-between items-center transition-colors">
+                        <span><i class="fa-solid fa-map-location-dot mr-2"></i> 사례 연구: 노르웨이의 티칭 컴퍼스 적용</span>
+                        <i class="fas fa-chevron-down transform transition-transform"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="border-l-4 border-blue-200 p-4 mt-2 bg-gray-50">
+                            <p class="mb-4">노르웨이는 티칭 컴퍼스의 핵심 원칙을 국가 교육 정책에 적극적으로 통합하고 있습니다. 이는 교사 개발, 기술 통합, 긍정적인 학교 환경 조성을 지원하는 프레임워크를 제공합니다.</p>
+                            <ul class="mt-4 list-disc list-inside text-gray-700">
+                                <li><strong>교사 교육 개혁:</strong> 교사의 웰빙, 주도성, 역량에 대한 총체적 접근 통합.</li>
+                                <li><strong>AI 활용:</strong> 교육과정 현대화를 위한 적응적이고 혁신적인 접근 장려.</li>
+                                <li><strong>안전한 학교 환경:</strong> 교사 웰빙을 강조하는 지지적인 분위기 조성.</li>
+                                <li><strong>실용적인 학교 프로그램:</strong> 실제 요구에 부응하도록 교사 주도성 증진.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="text-xl font-bold mb-4">교육 생태계의 다양한 행위자</h3>
+                <p class="mb-6">진정한 교육 혁신은 교사 혼자만의 노력이 아닌, 여러 이해관계자의 협력을 통해 이루어집니다.</p>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
+                    <div class="bg-gray-100 p-4 rounded-lg"><i class="fas fa-child mr-2"></i>학생</div>
+                    <div class="bg-gray-100 p-4 rounded-lg"><i class="fas fa-chalkboard-user mr-2"></i>교사</div>
+                    <div class="bg-gray-100 p-4 rounded-lg"><i class="fas fa-school mr-2"></i>학교 리더</div>
+                    <div class="bg-gray-100 p-4 rounded-lg"><i class="fas fa-user-friends mr-2"></i>학부모</div>
+                    <div class="bg-gray-100 p-4 rounded-lg"><i class="fas fa-users mr-2"></i>지역 사회</div>
+                    <div class="bg-gray-100 p-4 rounded-lg"><i class="fas fa-building mr-2"></i>민간 부문</div>
+                    <div class="bg-gray-100 p-4 rounded-lg"><i class="fas fa-landmark mr-2"></i>정책 입안자</div>
+                    <div class="bg-gray-100 p-4 rounded-lg"><i class="fas fa-flask mr-2"></i>연구 기관</div>
+                    <div class="bg-gray-100 p-4 rounded-lg"><i class="fas fa-cogs mr-2"></i>EdTech 기업</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-2xl font-bold">미래 교육을 함께 만들어갑시다</h3>
+            <p class="mt-2 text-gray-400">OECD 티칭 컴퍼스는 교사들이 변화의 주체로서 성장할 수 있도록 지원하는 나침반입니다.</p>
+            <div class="mt-6">
+                <a href="https://www.oecd.org/education/oecd-future-of-education-and-skills-2030/" target="_blank" class="px-6 py-2 border border-transparent text-base font-medium rounded-full text-white bg-blue-600 hover:bg-blue-700 transition-colors">
+                    OECD 원문 보기
+                </a>
+            </div>
+            <p class="mt-8 text-sm text-gray-500">© 2024 교사 재교육 프로그램. OECD Teaching Compass 자료 기반.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 아코디언 기능
+        const accordionToggles = document.querySelectorAll('.accordion-toggle');
+
+        accordionToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('i.fa-chevron-down');
+
+                // 다른 아코디언 닫기
+                accordionToggles.forEach(otherToggle => {
+                    if (otherToggle !== toggle) {
+                        otherToggle.nextElementSibling.style.maxHeight = null;
+                        otherToggle.querySelector('i.fa-chevron-down').classList.remove('rotate-180');
+                    }
+                });
+
+                // 현재 아코디언 열기/닫기
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    icon.classList.remove('rotate-180');
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    icon.classList.add('rotate-180');
+                }
+            });
+        });
+
+        // 이미지 URL 참고: 실제 배포 시에는 직접 업로드한 이미지 주소를 사용하세요.
+        // 이 코드에서는 임시 이미지 링크를 사용했습니다. (via IBB)
+    </script>
+
+</body>
+</html>
